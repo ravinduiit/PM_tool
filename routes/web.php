@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('Auth.user_login');
+    return view('aa');
 });
 
 Route::get('/profilePage', function () {
