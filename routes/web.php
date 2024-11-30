@@ -14,6 +14,10 @@ Route::get('/projectList', function () {
     return view('projectList');
 });
 
+Route::get('/create_project', function () {
+    return view('create_project');
+});
+
 Route::get('/addUser', function () {
     return view('addUser');
 });
