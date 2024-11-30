@@ -4,13 +4,11 @@
 
 @section('title', 'Projects Dashboard')
 
-@section('navbar')
-    <!-- Custom navbar code here -->
-@endsection
-
 @section('content')
 
-<div class="container mt-5 col-8">
+ @include('layout.project_navbar')
+
+<div class="container mt-5 col-11">
     <div class="card shadow-sm">
         <div class="card-body">
             <h4 class="mb-4">Projects / Create Project</h4>

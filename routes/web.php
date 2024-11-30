@@ -33,3 +33,7 @@ Route::get('/teams', function () {
 Route::get('/projectSettings', function () {
     return view('projectSettings');
 });
+
+Route::get('/project/dashboard', function () {
+    return view('project_dashboard');
+});

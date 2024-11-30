@@ -17,21 +17,33 @@ Notes: This template uses a Bootstrap -->
                 </a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="/projectList">
+                    <i class="bi bi-calendar3 fs-4"></i>
+                    <span class="nav-text">Projects</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/profilePage">
+                    <i class="bi bi-list-task fs-4"></i>
+                    <span class="nav-text">My Task List</span>
+                </a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="/profilePage">
                     <i class="bi bi-people fs-4"></i>
-                    <span class="nav-text">Profile</span>
+                    <span class="nav-text">Teams</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/addUser">
-                    <i class="bi bi-file-earmark fs-4"></i>
-                    <span class="nav-text">Add User</span>
+                    <i class="bi bi-person-fill-add fs-4"></i>
+                    <span class="nav-text">Users</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/projectSettings">
-                    <i class="bi bi-gear fs-4"></i>
-                    <span class="nav-text">Settings</span>
+                <a class="nav-link" href="/profilePage">
+                    <i class="bi bi-file-earmark fs-4"></i>
+                    <span class="nav-text">Apps</span>
                 </a>
             </li>
         </ul>
