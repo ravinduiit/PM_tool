@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('aa');
+    return view('layout.main');
 });
 
 Route::get('/profilePage', function () {
@@ -16,6 +16,9 @@ Route::get('/projectList', function () {
 
 Route::get('/create_project', function () {
     return view('create_project');
+});
+Route::get('/dashboard', function () {
+    return view('dashboard');
 });
 
 Route::get('/addUser', function () {
