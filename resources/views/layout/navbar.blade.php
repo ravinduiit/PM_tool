@@ -8,7 +8,7 @@ Notes: This template uses a Bootstrap -->
 
 <!-- resources/views/includes/navbar.blade.php -->
 <nav id="sidebar" class="col-md-1 col-lg-1 p-1 d-md-block rounded-3 sidebar collapse">
-    <div class="">
+    <div>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <a class="nav-link active rounded-5" aria-current="page" href="/dashboard">
