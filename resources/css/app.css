@@ -33,15 +33,16 @@
     min-height: 99vh;
     width: 70px; /* Default collapsed width */
     transition: width 0.3s ease;
-    border-right: 1px solid #ddd;
     overflow: hidden;
     background-color: #110730;
+    position: fixed; /* Fixes the sidebar to the viewport */
+    color: #fff; /* White text */
+    overflow-y: auto; /* Adds vertical scroll if content overflows */
+    z-index: 1030; /* Places it above other elements */
 }
 
 #sidebar:hover {
     width: 250px; /* Expanded width */
-    min-height: 99vh;
-    border-right: 1px solid #ddd;
 }
 
 /* Hide nav-text by default */
@@ -86,3 +87,13 @@
     transition: color 0.3s ease;
 }
 
+/* Main Content Adjustment */
+main {
+    margin-left: 70px; /* Matches collapsed sidebar width */
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out; /* Smooth adjustment */
+}
+
+#sidebar:hover ~ main {
+    margin-left: 250px; /* Matches expanded sidebar width */
+}

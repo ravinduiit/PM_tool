@@ -15,28 +15,23 @@
 
     </head>
     <body>
-        <!-- Header Section -->
-        <header>
-            <div class="p-1 position-absolute">
+        <div class="container-fluid d-flex">
+            <!-- Sidebar -->
+            <header>
                 @include('layout.navbar')
-            </div>
-        </header>
+            </header>
 
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Main Content -->
-                <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4">
-                    @yield('content')
-                </main>
-            </div>
+            <!-- Main Content -->
+            <main>
+                @yield('content')
+            </main>
         </div>
 
-        <!-- Footer Section -->
-        <footer>
-            @include('layout.footer')
-        </footer>
+        <!-- Footer -->
+        @include('layout.footer')
 
         @yield('script')
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     </body>
 </html>
