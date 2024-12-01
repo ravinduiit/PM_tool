@@ -24,6 +24,10 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/gantt-chart', function () {
+    return view('gantt_chart');
+});
+
 
 
 
