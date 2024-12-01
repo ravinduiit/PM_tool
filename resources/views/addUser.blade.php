@@ -64,28 +64,29 @@
     <h2 class="page-title">Add User</h2>
 
     <div class="form-container">
-        <form>
+        <form action="{{ route('addUser') }}" method="POST">
+            @csrf
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="firstName" class="form-label">User name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+                    <label for="username" class="form-label">User name</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter first name" name="username">
                 </div>
                 <div class="col-md-6">
                     <label for="email" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone No.</label>
-                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                    <label for="phoneNo" class="form-label">Phone No.</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number" name="phoneNo">
                 </div>
                 <div class="col-md-6">
                     <label for="designation" class="form-label">User Role</label>
-                    <select class="form-select" id="designation">
-                        <option value="UI Intern">Admin</option>
-                        <option value="Developer">Manager</option>
-                        <option value="Manager">User</option>
+                    <select class="form-select" id="designation" name="role">
+                        <option value="Admin">Admin</option>
+                        <option value="Manager">Manager</option>
+                        <option value="User">User</option>
                     </select>
                 </div>
             </div>
