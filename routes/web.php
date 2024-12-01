@@ -14,6 +14,9 @@ Route::get('/projectList', function () {
     return view('projectList');
 });
 
+Route::get('/create_project', function () {
+    return view('create_project');
+});
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
@@ -29,4 +32,8 @@ Route::get('/teams', function () {
 
 Route::get('/projectSettings', function () {
     return view('projectSettings');
+});
+
+Route::get('/project/dashboard', function () {
+    return view('project_dashboard');
 });

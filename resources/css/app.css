@@ -97,3 +97,6 @@ main {
 #sidebar:hover ~ main {
     margin-left: 250px; /* Matches expanded sidebar width */
 }
+body {
+    background-color: #e5efff;
+}
