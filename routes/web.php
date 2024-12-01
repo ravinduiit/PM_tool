@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('layout.main');
@@ -36,4 +37,14 @@ Route::get('/projectSettings', function () {
 
 Route::get('/project/dashboard', function () {
     return view('project_dashboard');
+});
+
+//google authenctication 
+Route::get('/auth/google/redirect', function (Request $request) {
+    return Socialite::driver("google")->redirect();
+});
+
+Route::get('/auth/google/callback', function (Request $request) {
+    // $googleUser = Socialite::driver("google")->user();
+    // dd($googleUser);
 });
